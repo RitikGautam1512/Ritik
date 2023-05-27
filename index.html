@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik -Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+        body{
+            font-family: 'poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(5, 5, 69);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(114, 114, 236);
+            font-size: 1.03rem;
+        }
+        .left{
+            font-size: 1.7rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin:  80px 0;
+        }
+        .firstsection > div{
+            width 30%;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 94px;
+        }
+        .leftsection{
+            /* background-color: red; */
+            font-size: 2.1rem;
+        }
+        .leftsection .buttons{
+            padding: 30px;
+        }
+        .leftsection .btn{
+            padding: 10px;
+            background: #1e2167;
+            color: white;
+            border-radius: 6px;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rightsection img{
+            /* background-color: red; */
+            width: 35%;
+            border: solid black;
+            
+            
+        }
+        .purple{
+            color: rgb(127, 37, 212);
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: rgb(127, 37, 212);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 70px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 45px;
+            width: 150;
+            font-size: 14px;
+
+        }
+        .vertical-desc{
+            position: relative;
+            top: 50px;
+            color: grey;
+            width: 150px;
+            font-size: 12px;
+
+        }
+        footer{
+            position: relative;
+            background-color: #0e0e1a;
+            height: 140px;
+            bottom: -215px;
+            
+        }
+        .footer{
+            
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list_style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: red;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+<body>
+    <heder>
+        <nav>
+            <div class="left">Ritik Gautam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </heder>
+    
+</body>
+<body>
+    <header>
+    </header>    
+        
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="purple">Ritik Gautam</span> 
+                <div>and I am a passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn">Download Resume </button>
+                        <button class="btn"> Visit Github</button>
+                    </div>
+            </div>
+
+            <div class="rightsection" align ="center">
+                <img src="image.jpg" alt="">
+            </div>
+        </section>
+<hr>        
+        <section class="secondSection">
+            <span class="text-gray">What I am learning in my career</span>
+            <h1>Teachnical skills...</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="download1.jpg" alt="">
+                    <div class="vertical-title">HTML, CSS & JavaScript</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download.png" alt="">
+                    <div class="vertical-title">Python & django Framework</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download.png" alt="">
+                    <div class="vertical-title">DSA(Data structure & Algorithms)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download1.jpg" alt="">
+                    <div class="vertical-title">DBMS(Database Management System) & SQL</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download.png" alt="">
+                    <div class="vertical-title">Other languages like C, C++</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download1.jpg" alt="">
+                    <div class="vertical-title">DBMS(Database Management System) & SQL</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-first"><h3>Major Projects</h3></div>
+            <div class="footer-second">
+                <ol>
+                    <li>Gesture Recognition System</li>
+                    <li>Face Recognition(Detection) Tool</li>
+                    <li>AI Project</li>
+                    <li>Jinni Voice Assitant</li>
+                </ol>
+            </div>
+            <div class="footer-second"><h4>Minor Projects</h3></div>
+            <div class="footer-third">
+                <ol>
+                    <li>Weather Forecasting</li>
+                    <li>PDF Maker App</li>
+                    <li>Databse Manager</li>
+                    <li>C++ Projects</li>
+                </ol>
+            </div>
+        </div>
+        <div class="footer-rights">Copyright © 
+            www.ritkgautamcoding.com | All rights reserved
+        </div>    
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed('#element', {
+            strings: ['Web developer', 'Programmer', 'Digital Content Creator.'], 
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
