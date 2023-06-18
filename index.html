@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,66 +10,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        body{
+
+        body {
             background-color: rgb(0, 0, 33);
             color: white;
         }
-        body{
+
+        body {
             font-family: 'poppins', sans-serif;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(5, 5, 69);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        nav ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
         }
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
-        nav ul li a:hover{
+
+        nav ul li a:hover {
             color: rgb(114, 114, 236);
             font-size: 1.03rem;
         }
-        .left{
+
+        .left {
             font-size: 1.7rem;
         }
-        .firstsection{
+
+        .firstsection {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin:  80px 0;
+            margin: 80px 0;
         }
-        .firstsection > div{
+
+        .firstsection>div {
             width 30%;
         }
-        main hr{
+
+        main hr {
             border: 0;
             background: #9c97f1;
             height: 1.2px;
             margin: 40px 94px;
         }
-        .leftsection{
+
+        .leftsection {
             /* background-color: red; */
             font-size: 2.1rem;
         }
-        .leftsection .buttons{
+
+        .leftsection .buttons {
             padding: 30px;
         }
-        .leftsection .btn{
+
+        .leftsection .btn {
             padding: 10px;
             background: #1e2167;
             color: white;
@@ -77,53 +92,63 @@
             font-size: 20px;
             cursor: pointer;
         }
-        .rightsection img{
+
+        .rightsection img {
             /* background-color: red; */
             width: 35%;
             border: solid black;
-            
-            
+
+
         }
-        .purple{
+
+        .purple {
             color: rgb(127, 37, 212);
         }
-        .text-gray{
+
+        .text-gray {
             color: gray;
         }
-        #element{
+
+        #element {
             color: rgb(127, 37, 212);
         }
-        .secondSection{
+
+        .secondSection {
             max-width: 80vw;
             margin: auto;
         }
-        .secondSection .box{
+
+        .secondSection .box {
             background: white;
             width: 80vw;
             height: 2px;
             margin: 56px 0;
             display: flex;
         }
-        .secondSection .vertical{
+
+        .secondSection .vertical {
             height: 70px;
             width: 1px;
             background-color: white;
-            margin: 0 100px;
+            margin: 0 6vw;
         }
-        .image-top{
+
+        .image-top {
             width: 23px;
             position: relative;
             top: -32px;
             left: -9px;
         }
-        .vertical-title{
+
+        .vertical-title {
             position: relative;
             top: 45px;
             width: 150;
             font-size: 14px;
 
         }
-        .vertical-desc{
+
+        .vertical-desc {
             position: relative;
             top: 50px;
             color: grey;
@@ -131,39 +156,119 @@
             font-size: 12px;
 
         }
-        footer{
+
+        footer {
             position: relative;
             background-color: #0e0e1a;
             height: 140px;
             bottom: -215px;
-            
+
         }
-        .footer{
-            
+
+        .footer {
+
             display: flex;
             padding: 23px 122px;
             justify-content: space-evenly;
         }
-        .footer ul{
+
+        .footer ul {
             list_style: none;
         }
-        .footer > div{
+
+        .footer>div {
             width: 223px;
         }
-        footer .footer-rights{
+
+        footer .footer-rights {
             text-align: center;
             color: red;
             padding: 12px 0;
         }
+
+        @media screen and (max-width: 2000px) {
+            body {
+                /* background-color: red; */
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            .secondSection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightsection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightsection img {
+                width: 45vw;
+                margin-bottom: 73px;
+            }
+
+            .image-top {
+                top: 115px;
+            }
+
+            footer .footer-rights {
+                text-align: center;
+                color: red;
+                padding: 12px 0;
+            }
+
+            .secondSection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 80vw;
+                height: 156vh;
+            }
+
+            body {
+                min-width: fit-content;
+            }
+        }
     </style>
 </head>
+
 <body>
     <heder>
         <nav>
             <div class="left">Ritik Gautam's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Home
+                            <a href="https://www.google.com"></a>
+                        </a></li>
                     <li><a href="/">About</a></li>
                     <li><a href="/">Services</a></li>
                     <li><a href="/">Projects</a></li>
@@ -172,69 +277,79 @@
             </div>
         </nav>
     </heder>
-    
+
 </body>
+
 <body>
     <header>
-    </header>    
-        
+    </header>
+
     <main>
         <section class="firstsection">
-            <div class="leftsection">Hi, My name is <span class="purple">Ritik Gautam</span> 
+            <div class="leftsection">
+                <div>Hi, My name is <span class="purple">Ritik Gautam</span></div>
                 <div>and I am a passionate</div>
-                    <span id="element"></span>
-                    <div class="buttons">
-                        <button class="btn">Download Resume </button>
-                        <button class="btn"> Visit Github</button>
-                    </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume </button>
+                    <button class="btn"> Visit Github</button>
+                </div>
             </div>
 
-            <div class="rightsection" align ="center">
+            <div class="rightsection" align="center">
                 <img src="image.jpg" alt="">
             </div>
         </section>
-<hr>        
+        <hr>
         <section class="secondSection">
             <span class="text-gray">What I am learning in my career</span>
             <h1>Teachnical skills...</h1>
             <div class="box">
                 <div class="vertical">
-                    <img class="image-top" src="download1.jpg" alt="">
+                    <img class="image-top" src="C++.png" alt="">
+                    <div class="vertical-title">C, C++</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                        laborum? Laudantium.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download.png" alt="">
                     <div class="vertical-title">HTML, CSS & JavaScript</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                        laborum? Laudantium.</div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="download.png" alt="">
+                    <img class="image-top" src="django.png" alt="">
                     <div class="vertical-title">Python & django Framework</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                        laborum? Laudantium.</div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="download.png" alt="">
+                    <img class="image-top" src="DSA.jpg" alt="">
                     <div class="vertical-title">DSA(Data structure & Algorithms)</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                        laborum? Laudantium.</div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="download1.jpg" alt="">
+                    <img class="image-top" src="DBMS.png" alt="">
                     <div class="vertical-title">DBMS(Database Management System) & SQL</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                        laborum? Laudantium.</div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="download.png" alt="">
-                    <div class="vertical-title">Other languages like C, C++</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="download1.jpg" alt="">
-                    <div class="vertical-title">DBMS(Database Management System) & SQL</div>
-                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laborum? Laudantium.</div>
+                    <img class="image-top" src="C++.png" alt="">
+                    <div class="vertical-title">C, C++</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+                        laborum? Laudantium.</div>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="footer">
-            <div class="footer-first"><h3>Major Projects</h3></div>
+            <div class="footer-first">
+                <h3>Major Projects</h3>
+            </div>
             <div class="footer-second">
                 <ol>
                     <li>Gesture Recognition System</li>
@@ -243,7 +358,9 @@
                     <li>Jinni Voice Assitant</li>
                 </ol>
             </div>
-            <div class="footer-second"><h4>Minor Projects</h3></div>
+            <div class="footer-second">
+                <h4>Minor Projects</h3>
+            </div>
             <div class="footer-third">
                 <ol>
                     <li>Weather Forecasting</li>
@@ -253,14 +370,14 @@
                 </ol>
             </div>
         </div>
-        <div class="footer-rights">Copyright © 
+        <div class="footer-rights">Copyright ©
             www.ritkgautamcoding.com | All rights reserved
-        </div>    
+        </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typed=new Typed('#element', {
-            strings: ['Web developer', 'Programmer', 'Digital Content Creator.'], 
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Programmer', 'Digital Content Creator.'],
             typeSpeed: 50,
         });
     </script>
